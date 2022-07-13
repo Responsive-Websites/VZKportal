@@ -1,0 +1,49 @@
+@font-face {
+  font-family: hinted;
+  font-display: swap;
+  src: url('../fonts/hinted-Hezaedrus-Italic.woff2') format('woff2'),
+    url('../fonts/hinted-Hezaedrus-Italic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: hinted;
+  font-display: swap;
+  src: url('../fonts/hinted-Hezaedrus-Light-Italic.woff2') format('woff2'),
+    url('../fonts/hinted-Hezaedrus-Light-Italic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: hinted;
+  font-display: swap;
+  src: url('../fonts/hinted-Hezaedrus-Light.woff2') format('woff2'),
+    url('../fonts/hinted-Hezaedrus-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: hinted;
+  font-display: swap;
+  src: url('../fonts/hinted-Hezaedrus-Medium-Italic.woff2') format('woff2'),
+    url('../fonts/hinted-Hezaedrus-Medium-Italic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: hinted;
+  font-display: swap;
+  src: url('../fonts/hinted-Hezaedrus-Medium.woff2') format('woff2'),
+    url('../fonts/hinted-Hezaedrus-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: hinted;
+  font-display: swap;
+  src: url('../fonts/hinted-Hezaedrus-Regular.woff2') format('woff2'),
+    url('../fonts/hinted-Hezaedrus-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto:ital@0;1&display=swap');
