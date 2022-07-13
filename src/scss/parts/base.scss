@@ -5,3 +5,30 @@ body {
   font-weight: 500;
   background-color: $color-white;
 }
+.wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  overflow: hidden;
+  min-height: 100%;
+}
+main {
+  flex: 1 1 100%;
+}
+
+._container {
+  max-width: $main-container-size;
+  margin: 0 auto;
+  box-sizing: content-box;
+
+  //mobile first
+
+  @media screen and (min-width: $md-1) {
+    padding: 0px 26px;
+  }
+  @media screen and (min-width: $md-2) {
+    padding: 0px 66px;
+  }
+  @media screen and (min-width: $md-3) {
+    padding: 0px 15px;
+  }
+}
