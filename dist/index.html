@@ -16,7 +16,7 @@
 <header class="header">
   <div class="header__container _container">
     <div class="header__inner">
-      <div class="header__logo">
+      <a href="#" class="header__logo">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -50,14 +50,16 @@
             />
           </defs>
         </svg>
-      </div>
+      </a>
       <nav class="header__nav">
-        <ul class="header__nav-list">
+        <ul data-spollers="960,max" data-one-spoller class="header__nav-list">
           <li class="header__nav-item">
-            <a href="#" class="header__nav-link">О заболевании</a>
+            <div data-spoller class="header__nav-link header__nav-link_spoiler"><p>О заболевании</p></div>
+            <div class="header__nav-content-about"></div>
           </li>
           <li class="header__nav-item">
-            <a href="#" class="header__nav-link">Пациентам</a>
+            <p data-spoller href="#" class="header__nav-link header__nav-link_spoiler">Пациентам</p>
+            <div class="header__nav-content-patients"></div>
           </li>
           <li class="header__nav-item">
             <a href="#" class="header__nav-link">Сообщество</a>
@@ -66,9 +68,134 @@
             <a href="#" class="header__nav-link">Новости</a>
           </li>
         </ul>
+
+        <!-- dropdown menu -->
+        <div data-da=".header__nav-content-about,960,1" class="header__dropdown-list-about">
+          <a href="#" class="dropdown-item">
+            <div class="dropdown-item__image">
+              <img src="img/navigation-header/About/1.svg" alt="" />
+            </div>
+            <div class="dropdown-item__content">
+              <h4 class="dropdown-item__title">Подробнее о ВЗК</h4>
+              <p class="dropdown-item__text">
+                Узнайте больше о Язвенном колите, болезни Крона, микроскопическом колите
+              </p>
+            </div>
+          </a>
+          <a href="#" class="dropdown-item">
+            <div class="dropdown-item__image">
+              <img src="img/navigation-header/About/2.svg" alt="" />
+            </div>
+            <div class="dropdown-item__content">
+              <h4 class="dropdown-item__title">Хирургия и осложнения</h4>
+              <p class="dropdown-item__text">Узнайте больше про оперативное лечение</p>
+            </div>
+          </a>
+          <a href="#" class="dropdown-item">
+            <div class="dropdown-item__image">
+              <img src="img/navigation-header/About/3.svg" alt="" />
+            </div>
+            <div class="dropdown-item__content">
+              <h4 class="dropdown-item__title">Терапия</h4>
+              <p class="dropdown-item__text">Узнайте больше о лекарствах используемых для контроля ВЗК</p>
+            </div>
+          </a>
+          <a href="#" class="dropdown-item">
+            <div class="dropdown-item__image">
+              <img src="img/navigation-header/About/4.svg" alt="" />
+            </div>
+            <div class="dropdown-item__content">
+              <h4 class="dropdown-item__title">Жизнь с ВЗК</h4>
+              <p class="dropdown-item__text">
+                Жизнь С ВЗК имеет свои проблемы. Но вы все равно можете получить от жизни максимум, и мы здесь , чтобы
+                помочь на каждом шагу
+              </p>
+            </div>
+          </a>
+          <a href="#" class="dropdown-item">
+            <div class="dropdown-item__image">
+              <img src="img/navigation-header/About/5.svg" alt="" />
+            </div>
+            <div class="dropdown-item__content">
+              <h4 class="dropdown-item__title">Симптомы</h4>
+              <p class="dropdown-item__text">
+                Разбираем основные симптомы и возможности по их контролю. Делая жизнь немного легче
+              </p>
+            </div>
+          </a>
+          <a href="#" class="dropdown-item">
+            <div class="dropdown-item__image">
+              <img src="img/navigation-header/About/6.svg" alt="" />
+            </div>
+            <div class="dropdown-item__content">
+              <h4 class="dropdown-item__title">Питание и диеты</h4>
+              <p class="dropdown-item__text">
+                ВЗК может внести изменения в ваш рацион. Информация поможет найти оптимальные решения по питанию
+              </p>
+            </div>
+          </a>
+        </div>
+        <div data-da=".header__nav-content-patients,960,1" class="header__dropdown-list-patients">
+          <a href="#" class="dropdown-item">
+            <div class="dropdown-item__image">
+              <img src="img/navigation-header/for-patients/1.svg" alt="" />
+            </div>
+            <div class="dropdown-item__content">
+              <h4 class="dropdown-item__title">Поиск медучреждения</h4>
+              <p class="dropdown-item__text">Отобрали гастроотделения сопытом работы с ВЗК пациентами</p>
+            </div>
+          </a>
+          <a href="#" class="dropdown-item">
+            <div class="dropdown-item__image">
+              <img src="img/navigation-header/for-patients/2.svg" alt="" />
+            </div>
+            <div class="dropdown-item__content">
+              <h4 class="dropdown-item__title">Психологическая поддержка</h4>
+              <p class="dropdown-item__text">Поможем вам с вашими беспокойствами</p>
+            </div>
+          </a>
+          <a href="#" class="dropdown-item">
+            <div class="dropdown-item__image">
+              <img src="img/navigation-header/for-patients/3.svg" alt="" />
+            </div>
+            <div class="dropdown-item__content">
+              <h4 class="dropdown-item__title">ВЗК Сообщества</h4>
+              <p class="dropdown-item__text">Помогаем найти Сообщества пациентов</p>
+            </div>
+          </a>
+        </div>
+        <!-- ============= -->
+        <div class="header__nav-social">
+          <a href="#" class="header__nav-social-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="14" viewBox="0 0 24 14" fill="none">
+              <path
+                d="M11.75 13.6299H13.15C13.15 13.6299 13.57 13.5799 13.79 13.3499C13.99 13.1399 13.98 12.7299 13.98 12.7299C13.98 12.7299 13.95 10.8499 14.83 10.5699C15.69 10.2999 16.8 12.3899 17.97 13.1899C18.86 13.7999 19.53 13.6699 19.53 13.6699L22.66 13.6299C22.66 13.6299 24.3 13.5299 23.52 12.2399C23.46 12.1299 23.07 11.2899 21.19 9.5399C19.22 7.7199 19.49 8.0099 21.86 4.8599C23.3 2.9399 23.88 1.7699 23.7 1.2599C23.53 0.779901 22.47 0.909901 22.47 0.909901L18.94 0.929901C18.94 0.929901 18.68 0.889901 18.48 1.0099C18.29 1.1199 18.17 1.3899 18.17 1.3899C18.17 1.3899 17.61 2.8799 16.87 4.1399C15.3 6.8099 14.67 6.9499 14.41 6.7799C13.81 6.3899 13.96 5.2299 13.96 4.3999C13.96 1.8099 14.35 0.739901 13.2 0.459901C12.82 0.369901 12.53 0.309901 11.55 0.299901C10.29 0.289901 9.23003 0.299901 8.62004 0.599901C8.22004 0.799901 7.91004 1.2299 8.10004 1.2599C8.33004 1.2899 8.86003 1.3999 9.14003 1.7799C9.50003 2.2699 9.49004 3.3799 9.49004 3.3799C9.49004 3.3799 9.70004 6.4199 9.00004 6.7999C8.52004 7.0599 7.87004 6.5299 6.47004 4.1099C5.75004 2.8699 5.21003 1.4999 5.21003 1.4999C5.21003 1.4999 5.11003 1.2399 4.92003 1.1099C4.69003 0.9399 4.38003 0.889901 4.38003 0.889901L1.03003 0.909901C1.03003 0.909901 0.530035 0.919901 0.340035 1.1399C0.180035 1.3299 0.330035 1.7399 0.330035 1.7399C0.330035 1.7399 2.95004 7.8799 5.93004 10.9799C8.65003 13.8199 11.75 13.6299 11.75 13.6299Z"
+                fill="#4896D2"
+              />
+            </svg>
+          </a>
+          <a href="#" class="header__nav-social-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 41 41" fill="none">
+              <path
+                d="M20.2716 13.8584C16.4789 13.8584 13.4011 16.9362 13.4011 20.7288C13.4011 24.5215 16.4789 27.5993 20.2716 27.5993C24.0642 27.5993 27.142 24.5215 27.142 20.7288C27.142 16.9362 24.0642 13.8584 20.2716 13.8584Z"
+                fill="#4896D2"
+              />
+              <path
+                d="M28.9696 0.553955H11.5949C5.26059 0.553955 0.117676 5.69686 0.117676 12.0312V29.4058C0.117676 35.7402 5.26059 40.8831 11.5949 40.8831H28.9696C35.3039 40.8831 40.4468 35.7402 40.4468 29.4058V12.0312C40.4468 5.69686 35.3039 0.553955 28.9696 0.553955ZM20.2723 31.054C14.5734 31.054 9.94678 26.4273 9.94678 20.7284C9.94678 15.0295 14.5734 10.4029 20.2723 10.4029C25.9712 10.4029 30.5978 15.0295 30.5978 20.7284C30.6177 26.4273 25.9712 31.054 20.2723 31.054ZM31.0545 12.2893C29.6844 12.2893 28.5724 11.1773 28.5724 9.80721C28.5724 8.43709 29.6844 7.32511 31.0545 7.32511C32.4246 7.32511 33.5366 8.43709 33.5366 9.80721C33.5366 11.1773 32.4246 12.2893 31.0545 12.2893Z"
+                fill="#4896D2"
+              />
+              <path
+                d="M20.2716 27.5993C16.4789 27.5993 13.4011 24.5215 13.4011 20.7288C13.4011 16.9362 16.4789 13.8584 20.2716 13.8584C24.0642 13.8584 27.142 16.9362 27.142 20.7288C27.142 24.5215 24.0642 27.5993 20.2716 27.5993Z"
+                fill="#4896D2"
+              />
+            </svg>
+          </a>
+        </div>
       </nav>
-      <div class="header__burger">
-        <span></span>
+      <div class="header__burger-wrapper">
+        <div class="header__burger">
+          <span></span>
+        </div>
       </div>
     </div>
   </div>

@@ -4,6 +4,7 @@ body {
   font-family: $font-main;
   font-weight: 500;
   background-color: $color-white;
+  color: $color-black;
 }
 .wrapper {
   display: flex;
@@ -22,9 +23,8 @@ main {
 
   //mobile first
 
-  @media screen and (min-width: $md-1) {
-    padding: 0px 26px;
-  }
+  padding: 0px 26px 0px 26px;
+
   @media screen and (min-width: $md-2) {
     padding: 0px 66px;
   }
