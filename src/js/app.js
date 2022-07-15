@@ -5,16 +5,23 @@
 
 // burger
 
-// let header_menu = document.querySelector('.menu__body');
+let header_menu = document.querySelector('.header__nav');
 let burger_wrapper = document.querySelector('.header__burger-wrapper');
 let burger_icon = document.querySelector('.header__burger');
 burger_wrapper.addEventListener('click', function (e) {
-  //   header_menu.classList.toggle('_active');
+  header_menu.classList.toggle('_active');
   burger_icon.classList.toggle('_active');
   document.body.classList.toggle('_lock');
 });
 
 // =========================================================
+
+//modal windows
+let link_modal_about = document.getElementById('button-modal-about');
+let modal_about = document.querySelector('.header__dropdown-list-about');
+link_modal_about.addEventListener('click', function (e) {
+  modal_about.classList.toggle('_active');
+});
 
 // ibg
 
