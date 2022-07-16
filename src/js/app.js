@@ -21,6 +21,14 @@ let link_modal_about = document.getElementById('button-modal-about');
 let modal_about = document.querySelector('.header__dropdown-list-about');
 link_modal_about.addEventListener('click', function (e) {
   modal_about.classList.toggle('_active');
+  link_modal_about.classList.toggle('_active-mod');
+});
+
+let link_modal_patients = document.getElementById('button-modal-patients');
+let modal_patients = document.querySelector('.header__dropdown-list-patients');
+link_modal_patients.addEventListener('click', function (e) {
+  modal_patients.classList.toggle('_active');
+  link_modal_patients.classList.toggle('_active-mod');
 });
 
 // ibg

@@ -426,6 +426,9 @@ main {
   .header__nav-link_spoiler {
     padding-right: 25px;
   }
+  .header__nav-link_spoiler._active-mod::after {
+    transform: translate(0px, -25%) rotate(180deg);
+  }
 }
 .header__nav-content-about {
   padding-top: 11px;
@@ -450,12 +453,12 @@ main {
 @media screen and (min-width: 960px) {
   .header__dropdown-list-about {
     position: absolute;
-    top: 130%;
-    left: -20px;
+    top: 140%;
+    left: -30px;
     display: flex;
     flex-flow: row wrap;
     max-width: 682px;
-    min-height: 400px;
+    min-height: none;
     background-color: #ffffff;
     z-index: 10;
     box-shadow: 4px 7px 32px rgba(105, 41, 142, 0.31);
@@ -466,6 +469,29 @@ main {
     transition: opacity 0.3s ease 0s;
   }
   .header__dropdown-list-about._active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@media screen and (min-width: 960px) {
+  .header__dropdown-list-patients {
+    position: absolute;
+    top: 140%;
+    left: -30px;
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 682px;
+    min-height: none;
+    background-color: #ffffff;
+    z-index: 10;
+    box-shadow: 4px 7px 32px rgba(105, 41, 142, 0.31);
+    border-radius: 14px;
+    padding: 22px 26px 22px 26px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease 0s;
+  }
+  .header__dropdown-list-patients._active {
     opacity: 1;
     visibility: visible;
   }
@@ -655,7 +681,7 @@ main {
 @media screen and (min-width: 960px) {
   .dropdown-item {
     display: flex;
-    flex: 1 1 49%;
+    flex: 0 1 49%;
     padding: 12px 14px 14px 14px;
     transition: all 0.3s ease 0s;
   }

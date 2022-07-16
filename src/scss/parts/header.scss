@@ -227,6 +227,12 @@
 
       @media screen and (min-width: $md-3) {
         padding-right: 25px;
+
+        &._active-mod {
+          &::after {
+            transform: translate(0px, -25%) rotate(180deg);
+          }
+        }
       }
     }
   }
@@ -254,13 +260,13 @@
   &__dropdown-list-about {
     @media screen and (min-width: $md-3) {
       position: absolute;
-      top: 130%;
+      top: 140%;
 
-      left: -20px;
+      left: -30px;
       display: flex;
       flex-flow: row wrap;
       max-width: 682px;
-      min-height: 400px;
+      min-height: none;
       background-color: $color-white;
       z-index: 10;
       box-shadow: 4px 7px 32px rgba(105, 41, 142, 0.31);
@@ -279,6 +285,30 @@
   }
 
   &__dropdown-list-patients {
+    @media screen and (min-width: $md-3) {
+      position: absolute;
+      top: 140%;
+
+      left: -30px;
+      display: flex;
+      flex-flow: row wrap;
+      max-width: 682px;
+      min-height: none;
+      background-color: $color-white;
+      z-index: 10;
+      box-shadow: 4px 7px 32px rgba(105, 41, 142, 0.31);
+      border-radius: 14px;
+
+      padding: 22px 26px 22px 26px;
+
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease 0s;
+      &._active {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
   }
 
   &__burger-wrapper {
@@ -412,7 +442,7 @@
   }
   @media screen and (min-width: $md-3) {
     display: flex;
-    flex: 1 1 49%;
+    flex: 0 1 49%;
     padding: 12px 14px 14px 14px;
 
     &:nth-child(odd) {
