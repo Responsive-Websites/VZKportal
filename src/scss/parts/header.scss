@@ -4,12 +4,13 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: transparent;
+  background-color: $color-white;
   z-index: 100;
 
   @media screen and (min-width: $md-3) {
     position: static;
     width: auto;
+    background-color: transparent;
   }
   &__container {
   }

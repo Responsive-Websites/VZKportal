@@ -17,19 +17,49 @@ burger_wrapper.addEventListener('click', function (e) {
 // =========================================================
 
 //modal windows
-let link_modal_about = document.getElementById('button-modal-about');
+let link_modal_about = document.querySelector('._button-modal-about');
 let modal_about = document.querySelector('.header__dropdown-list-about');
+
 link_modal_about.addEventListener('click', function (e) {
   modal_about.classList.toggle('_active');
   link_modal_about.classList.toggle('_active-mod');
 });
 
-let link_modal_patients = document.getElementById('button-modal-patients');
+document.documentElement.addEventListener('click', function (e) {
+  if (
+    !e.target.closest('._button-modal-about') &&
+    !e.target.closest('.header__dropdown-list-about') &&
+    link_modal_about.classList.contains('_active-mod')
+  ) {
+    modal_about.classList.remove('_active');
+    link_modal_about.classList.remove('_active-mod');
+  }
+});
+
+let link_modal_patients = document.querySelector('._button-modal-patients');
 let modal_patients = document.querySelector('.header__dropdown-list-patients');
 link_modal_patients.addEventListener('click', function (e) {
   modal_patients.classList.toggle('_active');
   link_modal_patients.classList.toggle('_active-mod');
 });
+
+document.documentElement.addEventListener('click', function (e) {
+  if (
+    !e.target.closest('._button-modal-patients') &&
+    !e.target.closest('.header__dropdown-list-patients') &&
+    link_modal_patients.classList.contains('_active-mod')
+  ) {
+    modal_patients.classList.remove('_active');
+    link_modal_patients.classList.remove('_active-mod');
+  }
+});
+
+// document.documentElement.addEventListener('click', function (e) {
+//   if (!e.target.closest('.header__dropdown-list-patients')) {
+//     modal_patients.classList.toggle('_active');
+//     link_modal_patients.classList.toggle('_active-mod');
+//   }
+// });
 
 // ibg
 

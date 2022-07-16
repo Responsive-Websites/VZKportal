@@ -142,6 +142,9 @@ body {
   background-color: #ffffff;
   color: #232323;
 }
+body._lock {
+  overflow: hidden;
+}
 
 .wrapper {
   display: flex;
@@ -150,8 +153,35 @@ body {
   min-height: 100%;
 }
 
-main {
+.wrapper-mod {
   flex: 1 1 100%;
+}
+@media screen and (min-width: 1400px) {
+  .wrapper-mod {
+    background-image: url("../../img/home/main-section/background-main-min.png");
+    background-position: center -60px;
+    background-size: 120%;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (min-width: 1550px) {
+  .wrapper-mod {
+    background-size: 1656px;
+  }
+}
+
+main {
+  padding-top: 70px;
+}
+@media screen and (min-width: 660px) {
+  main {
+    padding-top: 166px;
+  }
+}
+@media screen and (min-width: 960px) {
+  main {
+    padding-top: 0px;
+  }
 }
 
 ._container {
@@ -176,13 +206,14 @@ main {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: transparent;
+  background-color: #ffffff;
   z-index: 100;
 }
 @media screen and (min-width: 960px) {
   .header {
     position: static;
     width: auto;
+    background-color: transparent;
   }
 }
 .header__inner {
@@ -748,5 +779,160 @@ main {
   .dropdown-item__text {
     margin-top: 3px;
     font-size: 12px;
+  }
+}
+
+.main__preview-block {
+  margin-top: 8px;
+}
+@media screen and (min-width: 960px) {
+  .main__preview-block {
+    margin-top: 12px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main__preview-block {
+    margin-top: 58px;
+  }
+}
+
+.preview-block {
+  background: url("../../img/home/main-section/mobile-background-main-min.png") center 160px/160% no-repeat;
+}
+@media screen and (min-width: 450px) {
+  .preview-block {
+    background-size: 130%;
+    background-position: center 140px;
+  }
+}
+@media screen and (min-width: 550px) {
+  .preview-block {
+    background-size: 100%;
+    background-position: center 190px;
+  }
+}
+@media screen and (min-width: 660px) {
+  .preview-block {
+    background-image: url("../../img/home/main-section/background-main-min.png");
+    background-size: 170%;
+    background-position: center 50px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .preview-block {
+    background-size: 200%;
+    background-position: -500px 90px;
+  }
+}
+@media screen and (min-width: 940px) {
+  .preview-block {
+    background-size: 180%;
+    background-position: -600px 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .preview-block {
+    background-size: 115%;
+    background-position: center 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .preview-block {
+    background-size: 115%;
+    background-position: center -150px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .preview-block {
+    background: none;
+  }
+}
+.preview-block__inner {
+  padding-bottom: 466px;
+}
+@media screen and (min-width: 800px) {
+  .preview-block__inner {
+    padding-bottom: 734px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .preview-block__inner {
+    padding-bottom: 394px;
+  }
+}
+.preview-block__subtitle {
+  font-size: 13px;
+  line-height: 115%;
+  color: #b432ff;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 550px) {
+  .preview-block__subtitle {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 750px) {
+  .preview-block__subtitle {
+    font-size: 24px;
+    line-height: 120%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .preview-block__subtitle {
+    font-size: 21px;
+    line-height: 119%;
+  }
+}
+.preview-block__title {
+  font-size: 20px;
+  line-height: 144%;
+  max-width: 268px;
+}
+@media screen and (min-width: 550px) {
+  .preview-block__title {
+    font-size: 30px;
+    line-height: 131%;
+    max-width: 400px;
+    margin-top: 3px;
+  }
+}
+@media screen and (min-width: 750px) {
+  .preview-block__title {
+    font-size: 47px;
+    line-height: 131%;
+    max-width: 608px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .preview-block__title {
+    margin-top: 16px;
+    font-size: 40px;
+    line-height: 137%;
+  }
+}
+.preview-block__text {
+  margin-top: 6px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 137%;
+}
+@media screen and (min-width: 550px) {
+  .preview-block__text {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 750px) {
+  .preview-block__text {
+    font-size: 22px;
+    line-height: 173%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .preview-block__text {
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 160%;
   }
 }
