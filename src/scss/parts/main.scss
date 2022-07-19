@@ -20,7 +20,20 @@
       margin-top: -130px;
     }
   }
-  &_banners {
+  &__banners {
+    @media screen and (min-width: $md-2) {
+      margin-top: 16px;
+    }
+    @media screen and (min-width: $md-4) {
+      margin-top: 20px;
+    }
+  }
+  &__more-info {
+    margin-top: 38px;
+
+    @media screen and (min-width: $md-2) {
+      margin-top: 96px;
+    }
   }
 }
 
@@ -139,6 +152,7 @@
     }
   }
 }
+
 //about
 .about-main {
   max-width: 1400px;
@@ -163,7 +177,7 @@
     position: absolute;
     top: -20px;
     left: 50%;
-    background: url('../../img/home/about/background-union-test.png') top / 100% no-repeat;
+    background: url('../../img/home/about/background-union.png') top / 100% no-repeat;
     z-index: -2;
     transform: translate(-50%, 0%);
     @media screen and (min-width: $md-2) {
@@ -180,13 +194,15 @@
       width: 108%;
       top: -80px;
     }
+    @media screen and (min-width: 1440px) {
+      display: none;
+    }
   }
 
   &__container {
     background-color: $color-white;
     box-shadow: 0px -9px 17px rgba(105, 41, 142, 0.11);
     border-radius: 10px;
-    // padding: 68px 0px 40px 0px;
 
     padding: 36px 20px 36px 20px;
 
@@ -195,10 +211,20 @@
     }
     @media screen and (min-width: $md-4) {
       padding: 68px 30px 40px 30px;
-      // padding: 68px 56px 40px 56px;
     }
     @media screen and (min-width: 1220px) {
       padding: 68px 56px 40px 56px;
+      position: relative;
+
+      &::before {
+        content: '';
+        width: 100%;
+        height: 20px;
+        background-color: $color-white;
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+      }
     }
   }
 
@@ -212,12 +238,6 @@
 
   &__image {
     display: none;
-    // flex: 0 0 423px;
-    // margin-right: 74px;
-    // margin-top: 28px;
-    // & img {
-    //   width: 100%;
-    // }
 
     @media screen and (min-width: $md-2) {
       display: block;
@@ -344,6 +364,46 @@
     @media screen and (min-width: 1210px) {
       margin: 0px 20px;
       flex: 0 1 50%;
+    }
+  }
+}
+
+//more info
+.home-more {
+  &__container {
+  }
+
+  &__inner {
+    text-align: center;
+  }
+
+  &__title {
+    max-width: 156px;
+    font-weight: 300;
+    font-size: 19px;
+    line-height: 163%;
+    text-align: left;
+
+    @media screen and (min-width: $md-2) {
+      max-width: 561px;
+      font-size: 34px;
+      line-height: 117%;
+    }
+  }
+
+  &__items-about {
+    margin-top: 20px;
+
+    @media screen and (min-width: $md-2) {
+      margin-top: 50px;
+    }
+  }
+
+  &__nav {
+    margin-top: 56px;
+
+    @media screen and (min-width: 800px) {
+      margin-top: 100px;
     }
   }
 }
