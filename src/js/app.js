@@ -54,25 +54,18 @@ document.documentElement.addEventListener('click', function (e) {
   }
 });
 
-// document.documentElement.addEventListener('click', function (e) {
-//   if (!e.target.closest('.header__dropdown-list-patients')) {
-//     modal_patients.classList.toggle('_active');
-//     link_modal_patients.classList.toggle('_active-mod');
-//   }
-// });
-
 // ibg
 
-// function ibg() {
-//     let ibg = document.querySelectorAll('._ibg');
-//     for (var i = 0; i < ibg.length; i++) {
-//       if (ibg[i].querySelector('img')) {
-//         ibg[i].style.backgroundImage = 'url(' + ibg[i].querySelector('img').getAttribute('src') + ')';
-//       }
-//     }
-//   }
+function ibg() {
+  let ibg = document.querySelectorAll('._ibg');
+  for (var i = 0; i < ibg.length; i++) {
+    if (ibg[i].querySelector('img')) {
+      ibg[i].style.backgroundImage = 'url(' + ibg[i].querySelector('img').getAttribute('src') + ')';
+    }
+  }
+}
 
-//   ibg();
+ibg();
 
 // =========================================================
 

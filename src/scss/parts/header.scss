@@ -407,7 +407,7 @@
   }
 
   &__nav-social-icon {
-    @include social-button();
+    @extend %social-button;
 
     width: 40px;
     height: 40px;

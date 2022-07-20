@@ -16,6 +16,24 @@ body {
   overflow: hidden;
   min-height: 100%;
 }
+
+._ibg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+._ibg img {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
 .wrapper-mod {
   flex: 1 1 100%;
 
@@ -52,7 +70,7 @@ main {
   @media screen and (min-width: $md-2) {
     padding: 0px 66px;
   }
-  @media screen and (min-width: $md-3) {
+  @media screen and (min-width: 961px) {
     padding: 0px 15px;
   }
 }
@@ -328,33 +346,72 @@ main {
     flex-flow: row wrap;
     justify-content: space-between;
     margin: -20px -20px;
-    align-items: center;
+    align-items: stretch;
   }
+
   &__item {
     text-align: center;
     display: block;
     &:nth-child(1) {
-      & .items-disease__icon {
-        max-width: 144px;
+      & .items-disease__icon img {
+        width: 150px;
+        height: 125px;
+        top: 10px;
+        left: 0;
 
-        @media screen and (min-width: 520px) {
-          max-width: 220px;
+        @media screen and (min-width: $md-2) {
+          width: 232px;
+          height: 294px;
+          top: -30px;
+          left: -10px;
+        }
+        @media screen and (min-width: $md-4) {
+          width: 218px;
+          height: 182px;
+          top: 20px;
+          left: 18px;
         }
       }
     }
     &:nth-child(2) {
-      & .items-disease__icon {
-        max-width: 160px;
-        @media screen and (min-width: 520px) {
-          max-width: 240px;
+      & .items-disease__icon img {
+        width: 229px;
+        height: 117px;
+        top: 6px;
+        left: -48px;
+
+        @media screen and (min-width: $md-2) {
+          width: 354px;
+          height: 181px;
+          top: 10px;
+          left: -74px;
+        }
+        @media screen and (min-width: $md-4) {
+          width: 332px;
+          height: 170px;
+          top: 10px;
+          left: -70px;
         }
       }
     }
     &:nth-child(3) {
-      & .items-disease__icon {
-        max-width: 136px;
-        @media screen and (min-width: 520px) {
-          max-width: 246px;
+      & .items-disease__icon img {
+        width: 160px;
+        height: 154px;
+        top: -20px;
+        left: -10px;
+
+        @media screen and (min-width: $md-2) {
+          width: 246px;
+          height: 236px;
+          top: -30px;
+          left: -14px;
+        }
+        @media screen and (min-width: $md-4) {
+          width: 331px;
+          height: 222px;
+          top: -25px;
+          left: -65px;
         }
       }
     }
@@ -373,9 +430,24 @@ main {
   }
 
   &__icon {
+    position: relative;
+    width: 135px;
+    height: 135px;
+    border-radius: 50%;
+    background: #f6ebff;
     margin: 0 auto;
+
     & img {
-      width: 100%;
+      position: absolute;
+    }
+
+    @media screen and (min-width: $md-2) {
+      width: 208px;
+      height: 208px;
+    }
+    @media screen and (min-width: $md-4) {
+      width: 196px;
+      height: 196px;
     }
   }
 
@@ -391,6 +463,11 @@ main {
       line-height: 119%;
       font-size: 22px;
     }
+    @media screen and (min-width: $md-4) {
+      font-size: 24px;
+      line-height: 120%;
+      margin-top: 30px;
+    }
   }
 }
 
@@ -405,6 +482,9 @@ main {
   @media screen and (min-width: 800px) {
     justify-content: flex-start;
     margin: -16px -19px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin: -13.5px -13.5px;
   }
   &__item {
     box-shadow: 1.2px 0px 33px rgba(105, 41, 142, 0.11);
@@ -426,6 +506,11 @@ main {
       box-shadow: 2.4px 0px 64.8px rgba(105, 41, 142, 0.11);
       border-radius: 32.4px;
     }
+    @media screen and (min-width: 1200px) {
+      flex: 0 1 calc(20% - 27px);
+      margin: 13.5px 13.5px;
+      min-height: 220px;
+    }
   }
 
   &__icon {
@@ -437,6 +522,9 @@ main {
 
     @media screen and (min-width: 520px) {
       max-width: 105px;
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 88px;
     }
   }
 
@@ -453,6 +541,146 @@ main {
     }
     @media screen and (min-width: 800px) {
       margin-top: 32px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-top: 26px;
+      font-size: 19px;
+      line-height: 121%;
+    }
+  }
+}
+//home news items
+.home-news-items {
+  &__item-main {
+  }
+  &__item {
+    display: block;
+    &:not(:last-child) {
+      margin-bottom: 40px;
+
+      @media screen and (min-width: $md-2) {
+        margin-bottom: 80px;
+      }
+    }
+  }
+  &__main {
+    display: none;
+    @media screen and (min-width: $md-4) {
+      display: block;
+      flex: 0 1 50%;
+    }
+    color: $color-black;
+  }
+  &__more-items {
+    @media screen and (min-width: $md-4) {
+      flex: 0 1 calc(50% - 26px);
+      margin: 0px 26px;
+      //46
+    }
+  }
+  &__image {
+    padding-bottom: 67.6%;
+    border-radius: 14px;
+
+    @media screen and (min-width: $md-2) {
+      padding-bottom: 52.6%;
+    }
+  }
+
+  &__info {
+    margin-top: 12px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    @media screen and (min-width: $md-2) {
+      margin-top: 24px;
+    }
+  }
+
+  &__title {
+    font-size: 13px;
+    line-height: 156.5%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-right: 10px;
+
+    @media screen and (min-width: $md-2) {
+      font-size: 25px;
+      line-height: 156.5%;
+    }
+  }
+
+  &__date {
+    background: #edeaf6;
+    border: 0.1px solid #8330b3;
+    border-radius: 10px;
+    padding: 4px 14px 5px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    @media screen and (min-width: $md-2) {
+      padding: 8px 24px 10px 24px;
+      border-radius: 19px;
+    }
+  }
+
+  &__date-value {
+    white-space: nowrap;
+    font-weight: 300;
+    font-size: 9px;
+    line-height: 122%;
+    text-align: center;
+
+    @media screen and (min-width: $md-2) {
+      font-size: 18px;
+      line-height: 122%;
+    }
+  }
+
+  &__text {
+    margin-top: 3px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 175.5%;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+    @media screen and (min-width: $md-2) {
+      margin-top: 12px;
+      font-size: 24px;
+      line-height: 175.5%;
+      -webkit-line-clamp: 5;
+    }
+  }
+
+  &__button {
+    @extend %read-all-button;
+    margin: 38px auto 0px auto;
+    max-width: 180px;
+    padding: 11px 30px 11px 30px;
+    & span {
+      font-size: 12px;
+      line-height: 125%;
+    }
+
+    @media screen and (min-width: $md-2) {
+      margin-top: 80px;
+      max-width: 360px;
+      padding: 17px 62px 22px 62px;
+      border-radius: 15px;
+      & span {
+        font-size: 25px;
+        line-height: 120%;
+      }
+    }
+    @media screen and (min-width: $md-3) {
+      display: block;
     }
   }
 }
