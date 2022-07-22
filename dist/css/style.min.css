@@ -2455,5 +2455,10 @@ main {
     margin-top: 0px;
     font-size: 12px;
     line-height: 116%;
+    justify-self: start;
   }
+}
+
+.main_contact-page {
+  flex: 1 1 100%;
 }
