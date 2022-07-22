@@ -1,4 +1,17 @@
 //base
+
+html {
+  scrollbar-color: $color-purple transparent;
+  &::-webkit-scrollbar {
+    background-color: transparent;
+
+    width: 6px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #8330b3;
+    border-radius: 4px;
+  }
+}
 body {
   font-size: 18px;
   font-family: $font-main;
@@ -586,6 +599,28 @@ main {
     }
     color: $color-black;
   }
+  &__more-items-inner {
+    @media screen and (min-width: 1200px) {
+      flex: 0 1 50%;
+
+      padding: 0px 46px;
+
+      overflow-y: scroll;
+      overflow-x: hidden;
+      max-height: 690px;
+      scrollbar-color: $color-purple transparent;
+
+      &::-webkit-scrollbar {
+        background-color: transparent;
+
+        width: 8px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background-color: #8330b3;
+        border-radius: 4px;
+      }
+    }
+  }
   &__more-items {
     @media screen and (min-width: $md-4) {
       display: flex;
@@ -595,8 +630,7 @@ main {
       margin: -10px -10px;
     }
     @media screen and (min-width: 1200px) {
-      flex: 0 1 calc(50% - 46px);
-      margin: 0px 46px;
+      margin: 0px;
       display: block;
     }
   }

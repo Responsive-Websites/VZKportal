@@ -77,7 +77,7 @@
 
         <!-- dropdown menu -->
         <div data-da=".header__nav-content-about,960,1" class="header__dropdown-list-about">
-          <a href="#" class="dropdown-item">
+          <div data-goto=".main__about" class="dropdown-item">
             <div class="dropdown-item__image">
               <img src="img/navigation-header/About/1.svg" alt="" />
             </div>
@@ -87,8 +87,8 @@
                 Узнайте больше о Язвенном колите, болезни Крона, микроскопическом колите
               </p>
             </div>
-          </a>
-          <a href="#" class="dropdown-item">
+          </div>
+          <div data-goto=".banners-home__inner" class="dropdown-item">
             <div class="dropdown-item__image">
               <img src="img/navigation-header/About/2.svg" alt="" />
             </div>
@@ -96,7 +96,7 @@
               <h4 class="dropdown-item__title">Хирургия и осложнения</h4>
               <p class="dropdown-item__text">Узнайте больше про оперативное лечение</p>
             </div>
-          </a>
+          </div>
           <a href="#" class="dropdown-item">
             <div class="dropdown-item__image">
               <img src="img/navigation-header/About/3.svg" alt="" />
@@ -160,7 +160,7 @@
               <p class="dropdown-item__text">Поможем вам с вашими беспокойствами</p>
             </div>
           </a>
-          <a href="#" class="dropdown-item">
+          <div data-goto=".home-more__inner" class="dropdown-item">
             <div class="dropdown-item__image">
               <img src="img/navigation-header/for-patients/3.svg" alt="" />
             </div>
@@ -168,7 +168,7 @@
               <h4 class="dropdown-item__title">ВЗК Сообщества</h4>
               <p class="dropdown-item__text">Помогаем найти Сообщества пациентов</p>
             </div>
-          </a>
+          </div>
         </div>
         <!-- ============= -->
         <div class="header__nav-social">
@@ -386,61 +386,118 @@
             <span>Читать все новости</span>
           </a>
         </div>
-        <div class="home-news-items__more-items">
-          <a href="#" class="home-news-items__item">
-            <div class="home-news-items__image _ibg">
-              <img src="img/home/news-block/1-min.png" alt="" />
-            </div>
-            <div class="home-news-items__content">
-              <div class="home-news-items__info">
-                <h4 class="home-news-items__title">Серьезные проблемы со стороны ЖКТ</h4>
-                <div class="home-news-items__date">
-                  <p class="home-news-items__date-value">24 мая 2022</p>
-                </div>
+
+        <div class="home-news-items__more-items-inner">
+          <div class="home-news-items__more-items">
+            <a href="#" class="home-news-items__item">
+              <div class="home-news-items__image _ibg">
+                <img src="img/home/news-block/1-min.png" alt="" />
               </div>
-              <p class="home-news-items__text">
-                Рецидивирующие желудочно-кишечные нарушения, в том числе диарея, боль и спазмы в животе, снижение
-                аппетита и потеря веса, лихорадка и слабость могут являться нарушения, в том числе диарея, боль и спазмы
-                в животе, снижение аппетита и потеря веса, лихорадка и слабость могут являться …
-              </p>
-            </div>
-          </a>
-          <a href="#" class="home-news-items__item">
-            <div class="home-news-items__image _ibg">
-              <img src="img/home/news-block/3-min.png" alt="" />
-            </div>
-            <div class="home-news-items__content">
-              <div class="home-news-items__info">
-                <h4 class="home-news-items__title">Серьезные проблемы со стороны ЖКТ</h4>
-                <div class="home-news-items__date">
-                  <p class="home-news-items__date-value">24 мая 2022</p>
+              <div class="home-news-items__content">
+                <div class="home-news-items__info">
+                  <h4 class="home-news-items__title">Серьезные проблемы со стороны ЖКТ</h4>
+                  <div class="home-news-items__date">
+                    <p class="home-news-items__date-value">24 мая 2022</p>
+                  </div>
                 </div>
+                <p class="home-news-items__text">
+                  Рецидивирующие желудочно-кишечные нарушения, в том числе диарея, боль и спазмы в животе, снижение
+                  аппетита и потеря веса, лихорадка и слабость могут являться нарушения, в том числе диарея, боль и
+                  спазмы в животе, снижение аппетита и потеря веса, лихорадка и слабость могут являться …
+                </p>
               </div>
-              <p class="home-news-items__text">
-                Рецидивирующие желудочно-кишечные нарушения, в том числе диарея, боль и спазмы в животе, снижение
-                аппетита и потеря веса, лихорадка и слабость могут являться нарушения, в том числе диарея, боль и спазмы
-                в животе, снижение аппетита и потеря веса, лихорадка и слабость могут являться …
-              </p>
-            </div>
-          </a>
-          <a href="#" class="home-news-items__item">
-            <div class="home-news-items__image _ibg">
-              <img src="img/home/news-block/4-min.png" alt="" />
-            </div>
-            <div class="home-news-items__content">
-              <div class="home-news-items__info">
-                <h4 class="home-news-items__title">Серьезные проблемы со стороны ЖКТ</h4>
-                <div class="home-news-items__date">
-                  <p class="home-news-items__date-value">24 мая 2022</p>
+            </a>
+            <a href="#" class="home-news-items__item">
+              <div class="home-news-items__image _ibg">
+                <img src="img/home/news-block/3-min.png" alt="" />
+              </div>
+              <div class="home-news-items__content">
+                <div class="home-news-items__info">
+                  <h4 class="home-news-items__title">Серьезные проблемы со стороны ЖКТ</h4>
+                  <div class="home-news-items__date">
+                    <p class="home-news-items__date-value">24 мая 2022</p>
+                  </div>
                 </div>
+                <p class="home-news-items__text">
+                  Рецидивирующие желудочно-кишечные нарушения, в том числе диарея, боль и спазмы в животе, снижение
+                  аппетита и потеря веса, лихорадка и слабость могут являться нарушения, в том числе диарея, боль и
+                  спазмы в животе, снижение аппетита и потеря веса, лихорадка и слабость могут являться …
+                </p>
               </div>
-              <p class="home-news-items__text">
-                Рецидивирующие желудочно-кишечные нарушения, в том числе диарея, боль и спазмы в животе, снижение
-                аппетита и потеря веса, лихорадка и слабость могут являться нарушения, в том числе диарея, боль и спазмы
-                в животе, снижение аппетита и потеря веса, лихорадка и слабость могут являться …
-              </p>
-            </div>
-          </a>
+            </a>
+            <a href="#" class="home-news-items__item">
+              <div class="home-news-items__image _ibg">
+                <img src="img/home/news-block/4-min.png" alt="" />
+              </div>
+              <div class="home-news-items__content">
+                <div class="home-news-items__info">
+                  <h4 class="home-news-items__title">Серьезные проблемы со стороны ЖКТ</h4>
+                  <div class="home-news-items__date">
+                    <p class="home-news-items__date-value">24 мая 2022</p>
+                  </div>
+                </div>
+                <p class="home-news-items__text">
+                  Рецидивирующие желудочно-кишечные нарушения, в том числе диарея, боль и спазмы в животе, снижение
+                  аппетита и потеря веса, лихорадка и слабость могут являться нарушения, в том числе диарея, боль и
+                  спазмы в животе, снижение аппетита и потеря веса, лихорадка и слабость могут являться …
+                </p>
+              </div>
+            </a>
+            <a href="#" class="home-news-items__item">
+              <div class="home-news-items__image _ibg">
+                <img src="img/home/news-block/4-min.png" alt="" />
+              </div>
+              <div class="home-news-items__content">
+                <div class="home-news-items__info">
+                  <h4 class="home-news-items__title">Серьезные проблемы со стороны ЖКТ</h4>
+                  <div class="home-news-items__date">
+                    <p class="home-news-items__date-value">24 мая 2022</p>
+                  </div>
+                </div>
+                <p class="home-news-items__text">
+                  Рецидивирующие желудочно-кишечные нарушения, в том числе диарея, боль и спазмы в животе, снижение
+                  аппетита и потеря веса, лихорадка и слабость могут являться нарушения, в том числе диарея, боль и
+                  спазмы в животе, снижение аппетита и потеря веса, лихорадка и слабость могут являться …
+                </p>
+              </div>
+            </a>
+            <a href="#" class="home-news-items__item">
+              <div class="home-news-items__image _ibg">
+                <img src="img/home/news-block/1-min.png" alt="" />
+              </div>
+              <div class="home-news-items__content">
+                <div class="home-news-items__info">
+                  <h4 class="home-news-items__title">Серьезные проблемы со стороны ЖКТ</h4>
+                  <div class="home-news-items__date">
+                    <p class="home-news-items__date-value">24 мая 2022</p>
+                  </div>
+                </div>
+                <p class="home-news-items__text">
+                  Рецидивирующие желудочно-кишечные нарушения, в том числе диарея, боль и спазмы в животе, снижение
+                  аппетита и потеря веса, лихорадка и слабость могут являться нарушения, в том числе диарея, боль и
+                  спазмы в животе, снижение аппетита и потеря веса, лихорадка и слабость могут являться …
+                </p>
+              </div>
+            </a>
+            <a href="#" class="home-news-items__item">
+              <div class="home-news-items__image _ibg">
+                <img src="img/home/news-block/3-min.png" alt="" />
+              </div>
+              <div class="home-news-items__content">
+                <div class="home-news-items__info">
+                  <h4 class="home-news-items__title">Серьезные проблемы со стороны ЖКТ</h4>
+                  <div class="home-news-items__date">
+                    <p class="home-news-items__date-value">24 мая 2022</p>
+                  </div>
+                </div>
+                <p class="home-news-items__text">
+                  Рецидивирующие желудочно-кишечные нарушения, в том числе диарея, боль и спазмы в животе, снижение
+                  аппетита и потеря веса, лихорадка и слабость могут являться нарушения, в том числе диарея, боль и
+                  спазмы в животе, снижение аппетита и потеря веса, лихорадка и слабость могут являться …
+                </p>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </div>

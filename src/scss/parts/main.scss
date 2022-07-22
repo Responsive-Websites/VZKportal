@@ -476,18 +476,18 @@
 .news-home {
   &__container {
     @media screen and (min-width: 1200px) {
-      position: relative;
+      // position: relative;
 
-      &::before {
-        position: absolute;
-        content: '';
-        top: 95px;
-        right: 0;
-        width: 8px;
-        height: 129px;
-        background-color: $color-purple;
-        border-radius: 4px;
-      }
+      // &::before {
+      //   position: absolute;
+      //   content: '';
+      //   top: 95px;
+      //   right: 0;
+      //   width: 8px;
+      //   height: 129px;
+      //   background-color: $color-purple;
+      //   border-radius: 4px;
+      // }
     }
   }
   &__title {
