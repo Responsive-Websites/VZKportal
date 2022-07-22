@@ -2213,11 +2213,13 @@ main {
 @media screen and (min-width: 660px) {
   .footer {
     border-top-left-radius: 60px;
+    padding: 78px 0px 100px 0px;
   }
 }
 @media screen and (min-width: 1024px) {
   .footer {
     border-top-left-radius: 100px;
+    padding: 90px 0px 86px 0px;
   }
 }
 .footer::before {
@@ -2243,6 +2245,7 @@ main {
 }
 @media screen and (min-width: 660px) {
   .footer__inner {
+    padding-top: 44px;
     grid-template-areas: "logo nav" "copyright social";
     grid-template-rows: minmax(26px, auto) auto;
     grid-template-columns: minmax(148px, 300px) auto;
@@ -2251,8 +2254,11 @@ main {
 }
 @media screen and (min-width: 1024px) {
   .footer__inner {
+    padding-top: 35px;
+    column-gap: 30px;
+    row-gap: 30px;
     grid-template-rows: auto auto;
-    grid-template-columns: minmax(126px, 200px) 1fr auto;
+    grid-template-columns: minmax(180px, 200px) 1fr auto;
     grid-template-areas: "logo nav social" "copyright copyright copyright";
   }
 }
@@ -2294,12 +2300,19 @@ main {
     margin: -20px -40px;
   }
 }
+@media screen and (min-width: 1024px) {
+  .footer__nav {
+    justify-self: start;
+    margin: -20px -35px;
+  }
+}
 .footer__link {
   display: block;
   color: #232323;
   font-size: 12px;
   line-height: 116%;
   text-transform: uppercase;
+  transition: all 0.3s ease 0s;
 }
 @media screen and (max-width: 660px) {
   .footer__link:not(:last-child) {
@@ -2325,6 +2338,13 @@ main {
     margin: 10px 30px;
   }
 }
+@media screen and (min-width: 1024px) {
+  .footer__link {
+    font-size: 16px;
+    line-height: 118%;
+    margin: 10px 25px;
+  }
+}
 .footer__social {
   grid-area: social;
   display: flex;
@@ -2336,6 +2356,12 @@ main {
     margin: -9px -9px -9px -9px;
     justify-self: end;
     align-self: start;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footer__social {
+    margin: -8px;
+    align-self: center;
   }
 }
 .footer__social-icon {
@@ -2355,10 +2381,28 @@ main {
     height: 24px;
   }
 }
+@media screen and (min-width: 1024px) {
+  .footer__social-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    margin: 8px 8px;
+  }
+  .footer__social-icon svg {
+    width: 20px;
+    height: 21px;
+  }
+}
 @media screen and (min-width: 660px) {
   .footer__social-icon_vk svg {
     width: 26px;
     height: 15px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footer__social-icon_vk svg {
+    width: 24px;
+    height: 14px;
   }
 }
 .footer__copyright {
@@ -2376,5 +2420,15 @@ main {
     line-height: 121%;
     align-self: start;
     margin-top: 24px;
+  }
+  .footer__copyright:hover {
+    text-decoration: underline;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .footer__copyright {
+    margin-top: 0px;
+    font-size: 12px;
+    line-height: 116%;
   }
 }
