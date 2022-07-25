@@ -12,6 +12,37 @@
     width: auto;
     background-color: transparent;
   }
+  &_contact {
+    position: relative;
+
+    &::before {
+      content: '';
+
+      position: absolute;
+      pointer-events: none;
+      top: -105px;
+      right: -120px;
+      width: 260px;
+      height: 380px;
+      background: url('../../img/contact/background-decor.svg') center/100% no-repeat;
+      @media screen and (min-width: $md-2) {
+        width: 480px;
+        height: 680px;
+        top: -145px;
+        right: -110px;
+      }
+      @media screen and (min-width: $md-3) {
+        width: 560px;
+        height: 740px;
+        top: -224px;
+        right: -165px;
+      }
+    }
+    @media screen and (min-width: $md-3) {
+      position: relative;
+    }
+  }
+
   &__container {
   }
 

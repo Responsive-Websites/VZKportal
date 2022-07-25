@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  @@include('html/head.html', { "title":"Контакты" })
+  @@include('html/head.html', { "title":"Главная" })
   <body>
     <div class="wrapper">
       <!-- mod wrapper for duo background image -->
+      <div class="wrapper-mod">
+        <!-- header -->
+        @@include('html/header.html', {})
+        <!-- =====- -->
 
-      <!-- header -->
-      @@include('html/header.html', {})
-      <!-- =====- -->
-
-      <!-- main -->
-      @@include('html/main.html', {})
-      <!-- =====- -->
+        <!-- main -->
+        @@include('html/main.html', {})
+        <!-- =====- -->
+      </div>
 
       <!-- footer -->
       @@include('html/footer.html', {})

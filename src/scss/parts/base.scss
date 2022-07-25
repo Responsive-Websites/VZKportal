@@ -83,7 +83,7 @@ main {
   @media screen and (min-width: $md-2) {
     padding: 0px 66px;
   }
-  @media screen and (min-width: 961px) {
+  @media screen and (min-width: $md-3) {
     padding: 0px 15px;
   }
 }

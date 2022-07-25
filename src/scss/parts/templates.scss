@@ -66,3 +66,28 @@
     }
   }
 }
+
+%send-button {
+  width: 100%;
+  text-align: center;
+  padding: 16px 98px;
+  font-size: 16px;
+  line-height: 126.5%;
+  color: $color-white;
+  letter-spacing: -0.015em;
+  background-color: $color-purple;
+  box-shadow: 0px 7.88732px 31.5493px rgba(180, 50, 255, 0.5);
+  border-radius: 43px;
+
+  transition: all 0.3s ease 0s;
+
+  @media screen and (min-width: $md-2) {
+    &:hover {
+      box-shadow: 0px 7.88732px 38px rgba(180, 50, 255, 0.84);
+    }
+    &:active {
+      box-shadow: none;
+      background-color: #9915e6;
+    }
+  }
+}
