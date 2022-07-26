@@ -838,3 +838,64 @@ main {
     }
   }
 }
+
+//item more info (read more)
+.item-read-more {
+  padding: 11px 11px 15px 11px;
+  border-radius: 24px;
+  background-color: $color-white;
+  box-shadow: 0px 2px 29px rgba(126, 126, 126, 0.14);
+  @media screen and (min-width: 780px) {
+    padding: 15px 15px 25px 15px;
+  }
+
+  &__image {
+    padding-bottom: 81.5%;
+    border-radius: 14px;
+    align-self: stretch;
+    @media screen and (min-width: $md-2) {
+      padding-bottom: 76%;
+    }
+    @media screen and (min-width: $md-3) {
+      padding-bottom: 78.2%;
+    }
+  }
+
+  &__title {
+    margin-top: 18px;
+    font-size: 16px;
+    line-height: 127%;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    @media screen and (min-width: 840px) {
+      margin-top: 25px;
+      font-size: 22px;
+    }
+  }
+
+  &__text {
+    margin-top: 8px;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 126.5%;
+    text-align: justify;
+    letter-spacing: -0.015em;
+    color: #828282;
+    flex: 1 1 100%;
+    @media screen and (min-width: 840px) {
+      margin-top: 11px;
+      font-size: 18px;
+    }
+  }
+
+  &__read-more-button {
+    margin-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    @extend %read-all-button-arrow;
+
+    @media screen and (min-width: 840px) {
+      margin-top: 25px;
+    }
+  }
+}
