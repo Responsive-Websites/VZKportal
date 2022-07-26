@@ -1,0 +1,100 @@
+.main {
+  &__news-page {
+    margin-top: 52px;
+    margin-bottom: 70px;
+
+    @media screen and (min-width: $md-2) {
+      margin-top: 44px;
+      margin-bottom: 87px;
+    }
+    @media screen and (min-width: $md-4) {
+      margin-top: 66px;
+      margin-bottom: 110px;
+    }
+  }
+}
+
+.news-page {
+  &__container {
+    max-width: 1040px;
+    box-sizing: content-box;
+    margin: 0 auto;
+    padding: 0px 20px;
+
+    @media screen and (min-width: $md-2) {
+      padding: 0px 40px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding: 0px 200px;
+    }
+  }
+
+  &__info {
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 26px;
+    line-height: 106%;
+
+    @media screen and (min-width: $md-2) {
+      font-size: 40px;
+      line-height: 137%;
+    }
+  }
+  &__filters-inner {
+    margin: 20px auto 0px auto;
+    max-width: 628px;
+    @media screen and (min-width: $md-2) {
+      margin-top: 30px;
+      max-width: 804px;
+    }
+    @media screen and (min-width: $md-4) {
+      max-width: 728px;
+    }
+  }
+  &__filters {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: -4px;
+    @media screen and (min-width: $md-2) {
+      margin: -6px;
+    }
+    @media screen and (min-width: $md-4) {
+      max-width: -5px;
+    }
+  }
+
+  &__filter {
+    @extend %filter-item;
+    margin: 4px;
+
+    @media screen and (min-width: $md-2) {
+      margin: 6px;
+    }
+    @media screen and (min-width: $md-4) {
+      margin: 5px;
+    }
+  }
+
+  &__inner {
+    margin-top: 62px;
+    @media screen and (min-width: $md-2) {
+      margin-top: 66px;
+    }
+    @media screen and (min-width: $md-4) {
+      margin-top: 50px;
+    }
+  }
+
+  &__news-item {
+    &:not(:last-child) {
+      margin-bottom: 15px;
+      @media screen and (min-width: $md-2) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
